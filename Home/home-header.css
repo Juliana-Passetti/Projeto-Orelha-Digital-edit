@@ -49,6 +49,7 @@ body {
 .nav__header {
     gap: 2em;
     margin-right: 10%;
+    z-index: 2;
 }
 
 .nav__header a {
