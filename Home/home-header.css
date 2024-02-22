@@ -11,6 +11,7 @@
     --texto-principal: 'Cinzel Decorative', serif;
     --texto-header: "Kalam", cursive;
     --texto-secundário: 'Courier New', Courier, monospace;
+    --tamanho-texto: 18px;
 }
 
 * {
@@ -33,6 +34,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: end;
+    margin-right: 50px;
 
 }
 
@@ -41,19 +44,23 @@ body {
     box-shadow: 1px 1px 4px var(--cor-fundo);
     height: 3.5em;
     justify-content: space-between;
+    width: 100vw;
+
 
 
 
 }
 
 .nav__header {
+    justify-content: center;
+    align-items: center;
     gap: 2em;
-    margin-right: 10%;
     z-index: 2;
 }
 
 .nav__header a {
     color: var(--cor-branca);
+    font-size: var(--tamanho-texto);
     font-weight: bold;
     text-decoration: none;
     transition: 1s;
@@ -73,7 +80,6 @@ a:hover {
 .conteudo {
     text-align: start;
     font-family: var(--texto-secundário);
-    padding: 50px 0 0 30px;
     height: 100vh;
     transition: 1s;
 }
@@ -85,6 +91,38 @@ a:hover {
     cursor: pointer;
     display: none;
 }
+
+/*------------ teste Busca ------------ */
+search-container {
+    position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    height: 30px;
+    font-family: var(--texto-secundário);
+    font-size: var(--tamanho-texto);
+    border: var(--cor-laranja) solid 2px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.botao__busca {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/*------------ teste Busca ------------ */
 
 @media screen and (max-width: 768px) {
     .botao__icone__header {

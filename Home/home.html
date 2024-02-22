@@ -30,7 +30,7 @@
         </button>
 
         <div class="logo__header">
-            <img src="../logos/logoSvg.svg" alt="Logo OD" class="logo__header__OD">
+            <img src="../logos/logoCapaTransp.png" alt="Logo OD" class="logo__header__OD">
         </div>
 
         <div class="nav__header" id="nav__header">
@@ -39,14 +39,21 @@
                 <img src="../imagens/icones/icone fechar.svg" width="30px" height="30px">
             </button>
 
-            <a class="nav__header__link ativo" href="#">Home</a>
+            <a class="nav__header__link ativo" href="/Home/home.html">Home</a>
             <a class="nav__header__link" href="#">Lançamentos</a>
             <a class="nav__header__link" href="#">Categorias</a>
             <a class="nav__header__link" href="#">Autores</a>
             <a class="nav__header__link" href="#">Apoie</a>
-            <a class="nav__header__link" href="#">Meu Perfil</a>
-        </div>
+            <a class="nav__header__link usuario" href="#"><img src="/imagens/icones/icone usuario.svg" width="30px"></a>
 
+            <form action="#" method="get">
+                <label for="searchBox">
+                </label>
+                <input class="busca__texto" type="text" id="searchBox" name="q" placeholder="Buscar Livro">
+                <button class="botao__busca" type="submit"><img class="imagem__busca"
+                        src="/imagens/icones/icone busca.svg" width="30px"></button>
+
+        </div>
     </div>
 
     <div tabindex="0" onclick="fecharBarra()" class="conteudo" id="conteudo">
