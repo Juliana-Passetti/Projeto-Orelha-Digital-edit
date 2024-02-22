@@ -132,9 +132,7 @@ input {
     min-width: 150px;
 }
 
-#tecnicos__academicos {
-    min-width: 500px;
-}
+
 
 
 .dropdown-content {
@@ -169,6 +167,39 @@ input {
     display: none;
 }
 
+.subcategorias-literatura {
+    display: none;
+    max-height: 400px;
+    /* Altura máxima das subcategorias */
+    overflow-y: auto;
+}
+
+.subcategorias-literatura::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    /* Largura da barra de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-track {
+    background: var(--cor-fundo-sidebar);
+    /* Cor de fundo da barra de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-thumb {
+    background: var(--cor-laranja);
+    /* Cor do botão de rolagem */
+    border-radius: 5px;
+    /* Arredondamento do botão de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-laranja);
+    /* Cor do botão de rolagem quando hover */
+}
+
+.login {
+    margin-left: 50px;
+}
 
 /*------------ Acessibilidade ------------ */
 
