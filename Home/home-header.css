@@ -91,6 +91,10 @@ a:hover {
     display: none;
 }
 
+.botao__icone__header__fechar {
+    margin-left: 60px;
+}
+
 /*------------ teste Busca ------------ */
 search-container {
     position: relative;
@@ -244,11 +248,13 @@ input {
         min-width: 230px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
+
     }
 
 
     .dropdown-content a {
         color: var(--cor-branca);
+
         justify-content: center;
         align-items: center;
         font-size: 15px;
@@ -257,8 +263,11 @@ input {
         display: block;
     }
 
-
+    .botao__login {
+        margin-top: 50px;
+    }
 }
+
 
 
 @keyframes mostrarBarra {
