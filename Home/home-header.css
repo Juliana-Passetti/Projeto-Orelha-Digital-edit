@@ -132,6 +132,11 @@ input {
     min-width: 150px;
 }
 
+#tecnicos__academicos {
+    min-width: 500px;
+}
+
+
 .dropdown-content {
     display: none;
     position: absolute;
