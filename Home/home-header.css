@@ -161,8 +161,6 @@ input {
 }
 
 
-
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -282,18 +280,36 @@ input {
     font-optical-sizing: auto;
 }
 
-/*------------ Carrossel teste ------------ */
+/*------------ Carrossel ------------ */
 
+.container__carrossel__titulo {
+    font-family: var(--texto-secundário);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.container__carrossel__link {
+    color: var(--cor-branca);
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.container__carrossel__verMais {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
 
 .carrossel {
-    background-color: #ffffff23;
+    background-color: transparent;
     width: 95%;
     /* Ajuste a largura conforme necessário */
     margin: 0 auto;
     /* Centraliza o carrossel */
 }
-
-
 
 .carrossel img {
     width: 90%;
@@ -304,6 +320,9 @@ input {
     /* Centraliza a imagem horizontalmente */
 
 }
+
+
+
 
 /*------------ Acessibilidade ------------ */
 
