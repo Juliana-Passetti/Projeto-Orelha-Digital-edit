@@ -52,23 +52,61 @@
                     <a href="#">Lançamentos da semana</a>
                     <a href="#">Lançamentos do mês</a>
                     <a href="#">Lançamentos por ano</a>
-                    <!-- Adicione mais itens conforme necessário -->
                 </div>
+
             </div>
             <div class="dropdown" id="dropdownCategorias">
                 <a class="nav__header__link" href="#"
                     onclick="toggleDropdown('dropdownContentCategorias')">Categorias</a>
                 <div class="dropdown-content" id="dropdownContentCategorias">
-                    <a href="#">Literatura e Ficção</a>
-                    <a href="#">Técnicos e Academicos</a>
-                    <a href="#">Mangás e HQs</a>
-                    <a href="#">Outros</a>
-                    <!-- Adicione mais itens conforme necessário -->
+
+                    <a href="#" onclick="toggleSubcategorias(event)">Literatura e Ficção</a>
+                    <!-- Adicione uma subcategoria com um dropdown -->
+                    <div class="subcategorias-literatura dropdown-content">
+                        <a href="#">Romance</a>
+                        <a href="#">Biografias e Memórias</a>
+                        <a href="#">Ficção e Aventura</a>
+                        <a href="#">Ficção Fantástica</a>
+                        <a href="#">Ficção Científica</a>
+                        <a href="#">Contos, Crônicas e Ensaios</a>
+                        <a href="#">Infanto e Juvenil</a>
+                        <a href="#">Policial e Mistério</a>
+                        <a href="#">Humor e Entretenimento</a>
+                        <a href="#">Poemas e Poesia</a>
+                        <a href="#">Suspense, Terror e Horror</a>
+
+
+                        <!-- Adicione mais subcategorias ou links conforme necessário -->
+                    </div>
+                    <a href="#" onclick="toggleSubcategorias(event)">Técnicos e Acadêmicos</a>
+                    <!-- Adicione uma subcategoria com um dropdown -->
+                    <div class="subcategorias-literatura dropdown-content">
+                        <a href="#">Construir um Bote</a>
+                        <a href="#">Construir um Avião</a>
+                        <a href="#">Construir uma mesa</a>
+                        <!-- Adicione mais subcategorias ou links conforme necessário -->
+                    </div>
+                    <a href="#" onclick="toggleSubcategorias(event)">Mangás e HQs</a>
+                    <!-- Adicione uma subcategoria com um dropdown -->
+                    <div class="subcategorias-literatura dropdown-content">
+                        <a href="#">Mangás</a>
+                        <a href="#">HQ's</a>
+                        <a href="#">Gibis</a>
+                        <!-- Adicione mais subcategorias ou links conforme necessário -->
+                    </div>
+                    <a href="#" onclick="toggleSubcategorias(event)">Outros</a>
+                    <!-- Adicione uma subcategoria com um dropdown -->
+                    <div class="subcategorias-literatura dropdown-content">
+                        <a href="#">Plante uma árvore</a>
+                        <a href="#">Como montar um currículo</a>
+                        <a href="#">Fazendo seu primeiro site</a>
+                        <!-- Adicione mais subcategorias ou links conforme necessário -->
+                    </div>
                 </div>
             </div>
-            <div class="dropdown" id="dropdownAutores">
-                <a class="nav__header__link" href="#" onclick="toggleDropdown('dropdownContentAutores')">Download</a>
-                <div class="dropdown-content" id="dropdownContentAutores">
+            <div class="dropdown" id="dropdownDownload">
+                <a class="nav__header__link" href="#" onclick="toggleDropdown('dropdownContentDownload')">Download</a>
+                <div class="dropdown-content" id="dropdownContentDownload">
                     <a href="#">Pdf</a>
                     <a href="#">Epub</a>
                     <a href="#">MOBI</a>
@@ -81,7 +119,7 @@
 
             <a class="nav__header__link" href="#">Apoie</a>
             <a class="nav__header__link usuario" href="/Lancamentos/lancamentos.html"><img
-                    src="/imagens/icones/icone usuario.svg" width="30px"></a>
+                    src="../imagens/icones/icone usuario.svg" width="30px"></a>
 
 
             <form action="#" method="get">
@@ -89,7 +127,7 @@
                 </label>
                 <input class="busca__texto" type="text" id="searchBox" name="q" placeholder="Buscar Livro">
                 <button class="botao__busca" type="submit"><img class="imagem__busca"
-                        src="/imagens/icones/icone busca.svg" width="30px"></button>
+                        src="../imagens/icones/icone busca.svg" width="30px"></button>
 
         </div>
     </div>
@@ -98,7 +136,7 @@
         <h1 class="conteudo__recomendacao">Recomendação do Dia:</h1>
 
         <div>
-            
+
         </div>
 
     </div>

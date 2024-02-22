@@ -46,6 +46,9 @@ function toggleDropdown(dropdownId) {
     dropdownContent.classList.toggle("show");
 }
 
+
+
+
 // Fechar o dropdown se o usuário clicar fora dele
 window.onclick = function (event) {
     if (!event.target.matches('.nav__header__link')) {
@@ -57,4 +60,18 @@ window.onclick = function (event) {
             }
         }
     }
+}
+
+
+function toggleSubcategorias(event) {
+    event.stopPropagation(); // Evita que o evento de fechamento do dropdown principal seja acionado
+    var subcategorias = event.target.nextElementSibling;
+    subcategorias.style.display = (subcategorias.style.display === "block") ? "none" : "block";
+
+    // Adiciona um ouvinte de eventos de clique no documento para fechar as subcategorias ao clicar fora
+    document.addEventListener('click', function (e) {
+        if (!subcategorias.contains(e.target)) {
+            subcategorias.style.display = 'none';
+        }
+    });
 }
