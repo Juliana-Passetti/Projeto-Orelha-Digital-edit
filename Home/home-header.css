@@ -101,7 +101,7 @@ a:hover {
     font-family: var(--texto-secundário);
     font-size: 40px;
     font-weight: bold;
-    height: 100vh;
+    height: 100vw;
     margin-top: 50px;
     margin-left: 16px;
     transition: 1s;
@@ -235,7 +235,8 @@ input {
     grid-template-columns: repeat(1, 1fr 1fr);
     grid-template-rows: auto auto;
     grid-gap: 10px;
-    height: 100%;
+    height: 30%;
+    padding-bottom: 80px;
 
 }
 
@@ -279,6 +280,29 @@ input {
     font-weight: 300;
     font-size: 1.5rem;
     font-optical-sizing: auto;
+}
+
+/*------------ Carrossel teste ------------ */
+
+
+.carrossel {
+    background-color: #ffffff23;
+    width: 95%;
+    /* Ajuste a largura conforme necessário */
+    margin: 0 auto;
+    /* Centraliza o carrossel */
+}
+
+
+
+.carrossel img {
+    width: 90%;
+    /* Defina a largura desejada */
+    height: 100%;
+    /* Mantém a proporção da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+
 }
 
 /*------------ Acessibilidade ------------ */

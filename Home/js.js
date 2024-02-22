@@ -75,3 +75,29 @@ function toggleSubcategorias(event) {
         }
     });
 }
+
+$(document).ready(function () {
+    $('.carrossel').slick({
+        slidesToShow: 5, // Número de slides visíveis na tela
+        slidesToScroll: 1, // Número de slides a rolar por vez
+        autoplay: true, // Autoplay ativado
+        autoplaySpeed: 3000, // Velocidade do autoplay (em milissegundos)
+        arrows: true, // Setas de navegação ativadas
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Botão de navegação anterior
+        nextArrow: '<button type="button" class="slick-next">Next</button>', // Botão de navegação seguinte
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2 // Altere o número de slides visíveis em dispositivos menores
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1 // Altere o número de slides visíveis em dispositivos ainda menores
+                }
+            }
+        ]
+    });
+});
