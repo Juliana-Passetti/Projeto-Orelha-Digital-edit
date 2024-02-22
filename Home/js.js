@@ -32,3 +32,4 @@ window.addEventListener('resize', function (event) {
         puxarBarra();
 });
 
+/* teste lista*/
