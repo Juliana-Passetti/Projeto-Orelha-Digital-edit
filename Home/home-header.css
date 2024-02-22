@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
 
@@ -10,7 +12,8 @@
     --cor-laranja: #df5302cd;
     --texto-principal: 'Cinzel Decorative', serif;
     --texto-header: "Kalam", cursive;
-    --texto-secundário: 'Courier New', Courier, monospace;
+    --texto-secundário: "Merienda", cursive;
+    --texto-terciário: "Roboto", sans-serif;
     --tamanho-texto: 18px;
 }
 
@@ -77,6 +80,7 @@ a:hover {
     text-align: start;
     font-family: var(--texto-secundário);
     font-size: 40px;
+    font-weight: bold;
     height: 100vh;
     margin-top: 50px;
     margin-left: 16px;
@@ -203,6 +207,65 @@ input {
 
 .login {
     margin-left: 50px;
+}
+
+/*------------ Conteúdo ------------ */
+.container__conteudo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+.conteudo__recomendacao {
+    font-size: 30px;
+}
+
+.container__conteudo__recomendacao {
+    font-size: 20px;
+}
+
+.container__conteudo__titulo {
+    margin-top: 60px;
+    font-size: 30px;
+
+}
+
+.home__imagem__livro {
+    padding: 50px;
+}
+
+.container__conteudo__titulo {
+    font-family: var(--texto-secundário);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container__conteudo__sinopse {
+    margin-top: 40px;
+    font-family: var(--texto-terciário);
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container__conteudo__descricao {
+    margin-top: 20px;
+    font-family: var(--texto-terciário);
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+}
+
+.home__imagem__autor {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border: var(--cor-laranja) solid 3px;
+    width: 300px;
 }
 
 /*------------ Acessibilidade ------------ */
