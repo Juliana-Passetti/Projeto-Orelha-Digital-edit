@@ -42,20 +42,47 @@
             </button>
 
             <a class="nav__header__link ativo" href="/Home/home.html">Home</a>
-            <li><a class="nav__header__link" href="#">Lançamentos</a></li>
 
-            <div class="dropdown__menu">
-                <a href="#">Livro 1</a>
-                <a href="#">Livro 2</a>
-                <a href="#">Livro 3</a>
 
+            <div class="dropdown" id="dropdownLancamentos">
+                <a class="nav__header__link" href="#"
+                    onclick="toggleDropdown('dropdownContentLancamentos')">Lançamentos</a>
+                <div class="dropdown-content" id="dropdownContentLancamentos">
+                    <a href="#">Lançamentos do dia</a>
+                    <a href="#">Lançamentos da semana</a>
+                    <a href="#">Lançamentos do mês</a>
+                    <a href="#">Lançamentos por ano</a>
+                    <!-- Adicione mais itens conforme necessário -->
+                </div>
             </div>
+            <div class="dropdown" id="dropdownCategorias">
+                <a class="nav__header__link" href="#"
+                    onclick="toggleDropdown('dropdownContentCategorias')">Categorias</a>
+                <div class="dropdown-content" id="dropdownContentCategorias">
+                    <a href="#">Literatura e Ficção</a>
+                    <a href="#">Técnicos e Academicos</a>
+                    <a href="#">Mangás e HQs</a>
+                    <a href="#">Outros</a>
+                    <!-- Adicione mais itens conforme necessário -->
+                </div>
+            </div>
+            <div class="dropdown" id="dropdownAutores">
+                <a class="nav__header__link" href="#" onclick="toggleDropdown('dropdownContentAutores')">Download</a>
+                <div class="dropdown-content" id="dropdownContentAutores">
+                    <a href="#">Pdf</a>
+                    <a href="#">Epub</a>
+                    <a href="#">MOBI</a>
+                    <a href="#">Leia Online</a>
 
-            <a class="nav__header__link" href="#">Categorias</a>
-            <a class="nav__header__link" href="#">Autores</a>
+                    <!-- Adicione mais itens conforme necessário -->
+                </div>
+            </div>
+            <!-- Outros itens de menu aqui -->
+
             <a class="nav__header__link" href="#">Apoie</a>
             <a class="nav__header__link usuario" href="/Lancamentos/lancamentos.html"><img
                     src="/imagens/icones/icone usuario.svg" width="30px"></a>
+
 
             <form action="#" method="get">
                 <label for="searchBox">
@@ -69,6 +96,10 @@
 
     <div tabindex="0" onclick="fecharBarra()" class="conteudo" id="conteudo">
         <h1 class="conteudo__recomendacao">Recomendação do Dia:</h1>
+
+        <div>
+            
+        </div>
 
     </div>
 

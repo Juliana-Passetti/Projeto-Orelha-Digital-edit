@@ -33,3 +33,28 @@ window.addEventListener('resize', function (event) {
 });
 
 /* teste lista*/
+
+function toggleDropdown(dropdownId) {
+    var dropdownContent = document.getElementById(dropdownId);
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.id !== dropdownId) {
+            openDropdown.classList.remove("show");
+        }
+    }
+    dropdownContent.classList.toggle("show");
+}
+
+// Fechar o dropdown se o usuário clicar fora dele
+window.onclick = function (event) {
+    if (!event.target.matches('.nav__header__link')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
