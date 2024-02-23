@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --cor-fundo: #252525db;
+    --cor-fundo-header: #25252555;
+    --cor-fundo-sidebar: #252525;
+    --cor-branca: #D9D9D9;
+    --cor-laranja: #df5302cd;
+    --texto-principal: 'Cinzel Decorative', serif;
+    --texto-header: "Kalam", cursive;
+    --texto-secundário: "Merienda", cursive;
+    --texto-terciário: "Roboto", sans-serif;
+    --tamanho-texto: 18px;
+}
+
+
+
+.container__footer__header {
+    background-color: var(--cor-fundo-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.container__footer__header__copy {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 400px;
+}
+
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-decoration: none;
+
+
+}
+
+.footer__content__texto {
+    margin-right: 30px;
+    font-size: 16px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.footer__content__texto:hover {
+    text-decoration: underline;
+    color: var(--cor-laranja);
+    /* Adicionar sublinhado em links ao passar o mouse */
+}
+
+.footer__content__copy {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
