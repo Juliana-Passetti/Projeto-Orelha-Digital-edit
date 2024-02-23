@@ -13,7 +13,7 @@
     --texto-principal: 'Cinzel Decorative', serif;
     --texto-header: "Kalam", cursive;
     --texto-secundário: "Merienda", cursive;
-    --texto-terciário: "Roboto", sans-serif;
+    --texto-terciário: "Tahoma", sans-serif;
     --tamanho-texto: 18px;
 }
 
@@ -52,13 +52,16 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
 }
 
+#header {
+    width: 100%;
+}
+
 .header,
 .nav__header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
-    margin-right: 50px;
+    justify-content: space-around;
 
 }
 
@@ -92,6 +95,8 @@ a:hover {
 
 .ativo {
     background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
 }
@@ -110,12 +115,13 @@ a:hover {
     background-color: transparent;
     border: none;
     color: var(--cor-branca);
+    margin-left: 10px;
     cursor: pointer;
     display: none;
 }
 
 .botao__icone__header__fechar {
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 /*------------ Busca ------------ */
@@ -147,6 +153,10 @@ input {
     cursor: pointer;
 }
 
+.botao__login {
+    background-color: transparent;
+    color: var(--cor-laranja);
+}
 
 /*------------ Dropdown Todos ------------ */
 
@@ -266,7 +276,7 @@ input {
     margin-top: 40px;
     font-family: var(--texto-terciário);
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     font-style: normal;
 }
@@ -274,6 +284,7 @@ input {
 .container__conteudo__descricao {
     margin-top: 20px;
     font-family: var(--texto-terciário);
+    text-align: justify;
     font-weight: 300;
     font-size: 1.5rem;
     font-optical-sizing: auto;

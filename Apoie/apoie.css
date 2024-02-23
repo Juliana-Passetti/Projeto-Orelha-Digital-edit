@@ -1,6 +1,3 @@
-@import url('../Home/home-header.css');
-@import url('../Home/footer.css');
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
@@ -16,13 +13,14 @@
     --texto-principal: 'Cinzel Decorative', serif;
     --texto-header: "Kalam", cursive;
     --texto-secundário: "Merienda", cursive;
-    --texto-terciário: "Roboto", sans-serif;
+    --texto-terciário: "Tahoma", sans-serif;
     --tamanho-texto: 18px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -55,13 +53,16 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
 }
 
+#header {
+    width: 100%;
+}
+
 .header,
 .nav__header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
-    margin-right: 50px;
+    justify-content: space-around;
 
 }
 
@@ -95,6 +96,8 @@ a:hover {
 
 .ativo {
     background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
 }
@@ -113,12 +116,13 @@ a:hover {
     background-color: transparent;
     border: none;
     color: var(--cor-branca);
+    margin-left: 10px;
     cursor: pointer;
     display: none;
 }
 
 .botao__icone__header__fechar {
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 /*------------ Busca ------------ */
@@ -150,6 +154,10 @@ input {
     cursor: pointer;
 }
 
+.botao__login {
+    background-color: transparent;
+    color: var(--cor-laranja);
+}
 
 /*------------ Dropdown Todos ------------ */
 
@@ -269,7 +277,7 @@ input {
     margin-top: 40px;
     font-family: var(--texto-terciário);
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     font-style: normal;
 }
@@ -277,6 +285,7 @@ input {
 .container__conteudo__descricao {
     margin-top: 20px;
     font-family: var(--texto-terciário);
+    text-align: justify;
     font-weight: 300;
     font-size: 1.5rem;
     font-optical-sizing: auto;
@@ -309,22 +318,54 @@ input {
 .carrossel {
     background-color: transparent;
     width: 95%;
-    /* Ajuste a largura conforme necessário */
     margin: 0 auto;
-    /* Centraliza o carrossel */
 }
 
 .carrossel img {
     width: 90%;
-    /* Defina a largura desejada */
     height: 100%;
-    /* Mantém a proporção da imagem */
     margin: 0 auto;
-    /* Centraliza a imagem horizontalmente */
-
 }
 
+/*------------ Planos de doação ------------ */
 
+.plan-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    /* Ocupa 100% da largura */
+    box-sizing: border-box;
+}
+
+.plan {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.plan-header {
+    background-color: #800080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan-footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.price {
+    color: #800080;
+    font-size: 24px;
+    font-weight: bold;
+}
 
 /*------------ Acessibilidade ------------ */
 

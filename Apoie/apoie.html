@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Lançamentos da Semana</title>
+    <title>Orelha Digital - Home</title>
 
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../reset.css">
@@ -31,7 +31,7 @@
 
         <button onclick="puxarBarra()" class="botao__icone__header">
 
-            <img src="../imagens/icones/icone menu lista.svg" width="45px" height="45px">
+            <img src="../imagens/icones/icone menu lista.png" width="40px">
 
         </button>
 
@@ -42,7 +42,7 @@
         <div class="nav__header" id="nav__header">
 
             <button onclick="puxarBarra()" class="botao__icone__header">
-                <img class="botao__icone__header__fechar" src="../imagens/icones/icone fechar.svg" width="30px"
+                <img class="botao__icone__header__fechar" src="../imagens/icones/icone fechar.png" width="30px"
                     height="30px">
             </button>
 
@@ -125,6 +125,7 @@
                 <a class="nav__header__link" href="../Apoie/apoie.html"
                     onclick="toggleDropdown('dropdownContentDownload')">Apoie</a>
                 <div class="dropdown-content" id="dropdownContentDownload">
+
                     <!-- Adicione mais itens conforme necessário -->
                 </div>
             </div>
@@ -141,14 +142,63 @@
                         src="../imagens/icones/icone busca.svg" width="40px"></button>
 
                 <a class="nav__header__link login" href="#"><img class="botao__login"
-                        src="../imagens/icones/icone login.svg" width="40px"></a>
+                        src="../imagens/icones/icone login.png" width="40px"></a>
 
         </div>
     </div>
 
-    <div class="container__conteudo">
+    <div class="plan-container">
+        <!-- Plano 1 -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>12,5GB</h2>
+                <!-- Outros detalhes do cabeçalho -->
+            </div>
+            <div class="plan-body">
+                <!-- Detalhes do plano -->
+            </div>
+            <div class="plan-footer">
+                <span class="price">R$ 59,99/mês</span>
+                <br>
+                <a href="#">Assine já</a>
+            </div>
+        </div>
 
+        <!-- Plano 2 -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>13,5GB</h2>
+                <!-- Outros detalhes do cabeçalho -->
+            </div>
+            <div class="plan-body">
+                <!-- Detalhes do plano -->
+            </div>
+            <div class="plan-footer">
+                <span class="price">R$ 74,99/mês</span>
+                <br>
+                <a href="#">Assine já</a>
+            </div>
+        </div>
+
+        <!-- Plano 3 -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>15,5GB</h2>
+                <!-- Outros detalhes do cabeçalho -->
+            </div>
+            <div class="plan-body">
+                <!-- Detalhes do plano -->
+            </div>
+            <div class="plan-footer">
+                <span class="price">R$ 89,99/mês</span>
+                <br>
+                <a href="#">Assine já</a>
+            </div>
+        </div>
     </div>
+
+
+
 
     <div class="container__footer__header">
 
@@ -168,7 +218,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
 </body>
+
 <script src="../Home/js.js"></script>
 
 </html>
