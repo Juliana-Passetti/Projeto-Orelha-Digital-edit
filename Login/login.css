@@ -1,0 +1,57 @@
+@import url('../Home/home-header.css');
+@import url('../Home/footer.css');
+
+.container__login__cad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide a página em duas colunas */
+    gap: 20px;
+    /* Espaçamento entre as colunas */
+    margin: 20px;
+    /* Margem externa para separar das bordas da página */
+}
+
+/* Estilos para a seção de login */
+.login__entrada {
+    background-color: #f0f0f0;
+    /* Cor de fundo */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Arredondamento das bordas */
+}
+
+/* Estilos para a seção de cadastro */
+.login__saida {
+    background-color: #f0f0f0;
+    /* Cor de fundo */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Arredondamento das bordas */
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide a página em duas colunas */
+    margin: 0;
+    /* Remove margens padrão do body */
+    padding: 0;
+    /* Remove padding padrão do body */
+    height: 100vh;
+    /* Garante que o grid ocupe toda a altura da tela */
+}
+
+/* Estilos para a primeira coluna */
+.column1 {
+    background-color: #f0f0f0;
+    /* Cor de fundo da primeira coluna */
+}
+
+/* Estilos para a segunda coluna */
+.column2 {
+    background-color: #ffffff;
+    /* Cor de fundo da segunda coluna */
+}
