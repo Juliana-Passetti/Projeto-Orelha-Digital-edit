@@ -148,13 +148,14 @@ input {
     border-radius: 50px;
     width: 200px;
     text-align: center;
+    justify-content: center;
 }
 
 .botao__busca {
     background-color: transparent;
     border: none;
-    margin-left: 10px;
     cursor: pointer;
+    justify-content: center;
 }
 
 .botao__login {
@@ -287,7 +288,8 @@ input {
     text-align: center;
 }
 
-.entrar-body {
+.entrar-body,
+.cadastro-body {
     display: grid;
     grid-template-rows: auto;
     background-color: var(--cor-fundo);
@@ -297,15 +299,6 @@ input {
     align-items: center;
 }
 
-.cadastro-body {
-    display: grid;
-    grid-template-rows: auto;
-    background-color: var(--cor-fundo);
-    padding: 20px;
-    height: 21.1em;
-    text-align: start;
-    align-items: center;
-}
 
 
 .entrar-body1 {
@@ -317,7 +310,8 @@ input[type="password"],
 input[type="email"] {
     width: 100%;
     /* Ajusta a largura para ocupar todo o box */
-    margin-bottom: 30px;
+    margin: 10px;
+    padding: 15px;
     /* Cria espaço entre os campos de entrada */
 }
 
@@ -341,17 +335,25 @@ input[type="email"] {
 /* Botão ocupando 100% do box */
 button {
     font-size: 2rem;
-    width: 100%;
+    width: 40%;
     padding: 10px 0;
     border-radius: 10px;
     background-color: var(--cor-fundo-sidebar);
     color: var(--cor-branca);
     border: var(--cor-laranja) solid 2px;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     /* Ajuste conforme necessário para centralizar o texto verticalmente */
 }
 
-button:hover {
+
+.cadastro__botao:hover {
+    background-color: var(--cor-laranja);
+    transition: 1s;
+}
+
+.entrar__botao:hover {
     background-color: var(--cor-laranja);
     transition: 1s;
 }

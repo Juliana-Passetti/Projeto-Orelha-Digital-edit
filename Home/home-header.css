@@ -145,6 +145,7 @@ input {
     border-radius: 50px;
     width: 200px;
     text-align: center;
+    justify-content: center;
 }
 
 .botao__busca {
