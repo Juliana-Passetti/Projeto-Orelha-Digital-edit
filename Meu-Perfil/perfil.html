@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Orelha Digital - Home</title>
+    <title>Orelha Digital - Meu Perfil</title>
 
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../reset.css">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../Lancamentos/lanc.css">
     <link rel="stylesheet" href="../Apoie/apoie.css">
     <link rel="stylesheet" href="../Login/login.css">
+    <link rel="stylesheet" href="../Meu-Perfil/perfil.css">
+
 
 
 
@@ -135,15 +137,37 @@
                 </label>
                 <input class="busca__texto" type="text" id="searchBox" name="q" placeholder="Buscar Livro">
                 <button class="botao__busca" type="submit"><img class="imagem__busca"
-                        src="../imagens/icones/icone busca.svg" width="40px"></button>
+                        src="../imagens/icones/icone busca.svg" width="40px">
+                </button>
 
-                <a class="nav__header__link login" href="/Login/login.html"><img class="botao__login"
-                        src="../imagens/icones/icone login.png" width="40px"></a>
+                <a class="nav__header__link login" href="/Login/login.html">
+                    <img class="botao__login" src="../imagens/icones/icone login.png" width="40px">
+                </a>
 
         </div>
     </div>
 </head>
 
+
+
+<div class="profile-container">
+    <div class="profile-header">
+        <h1>Perfil do Usuário</h1>
+    </div>
+    <div class="profile-info">
+        <div class="profile-picture">
+            <!-- Aqui você pode adicionar a imagem de perfil do usuário -->
+            <img src="profile-picture.jpg" alt="Perfil">
+        </div>
+        <div class="user-details">
+            <h2>Dados do Usuário</h2>
+            <p><strong>Nome:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>País:</strong> Brasil</p>
+            <!-- Adicione outros detalhes do usuário conforme necessário -->
+        </div>
+    </div>
+</div>
 <div class="container__footer__header">
 
     <img src="../logos/logoCapaTransp.png" width="70px">
@@ -159,7 +183,6 @@
     </div>
 </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
