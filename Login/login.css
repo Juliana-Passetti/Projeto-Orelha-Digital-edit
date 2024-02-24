@@ -333,7 +333,8 @@ input[type="email"] {
 }
 
 /* Botão ocupando 100% do box */
-button {
+.cadastro-botao,
+.entrar-botão {
     font-size: 2rem;
     width: 40%;
     padding: 10px 0;
@@ -493,6 +494,153 @@ button {
         margin-right: 55px;
 
     }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+        width: 100vw;
+        height: 88vh;
+        box-sizing: border-box;
+    }
+
+    .entrar-container,
+    .cadastro-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .entrar,
+    .cadastro {
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+
+    .entrar-header,
+    .cadastro-header {
+        background-color: var(--cor-fundo-sidebar);
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        padding: 20px;
+        height: 100%;
+        text-align: center;
+    }
+
+    .entrar-body,
+    .cadastro-body {
+        display: grid;
+        grid-template-rows: auto;
+        background-color: var(--cor-fundo);
+        padding: 20px;
+        height: 25rem;
+        text-align: start;
+        align-items: center;
+    }
+
+
+
+    .entrar-body1 {
+        box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+        /* Ajusta a largura para ocupar todo o box */
+        margin: 10px;
+        padding: 15px;
+        /* Cria espaço entre os campos de entrada */
+    }
+
+    /* Checkbox e label "Lembre-me" */
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        /* Cria espaço abaixo do checkbox */
+    }
+
+    #lembrar-me {
+        width: 20px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        margin-right: 5px;
+        /* Espaço entre o checkbox e o label */
+    }
+
+    /* Botão ocupando 100% do box */
+    .cadastro-botao,
+    .entrar-botão {
+        font-size: 2rem;
+        width: 50%;
+        padding: 10px 0;
+        border-radius: 10px;
+        background-color: var(--cor-fundo-sidebar);
+        color: var(--cor-branca);
+        border: var(--cor-laranja) solid 2px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        /* Ajuste conforme necessário para centralizar o texto verticalmente */
+    }
+
+
+    .cadastro__botao:hover {
+        background-color: var(--cor-laranja);
+        transition: 1s;
+    }
+
+    .entrar__botao:hover {
+        background-color: var(--cor-laranja);
+        transition: 1s;
+    }
+
+    /* Espaçamento para "Esqueceu sua senha?" */
+    .esqueceu-senha {
+        display: block;
+        /* Cria uma nova linha */
+        margin-top: 10px;
+        /* Espaço acima do texto */
+    }
+
+    .esqueceu-senha__link {
+        color: var(--cor-branca);
+    }
+
+    .esqueceu-senha__link:hover {
+        color: var(--cor-laranja);
+    }
+
+    /* Espaçamento entre o campo "Email" e a descrição no box "Cadastro" */
+    .cadastro-container input[type="email"] {
+        margin-bottom: 100px;
+        /* Aumenta o espaço abaixo do campo de email */
+    }
+
+    .entrar-footer,
+    .cadastro-footer {
+        background-color: var(--cor-fundo);
+        padding: 20px;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*------------ Acessibilidade Smartphone ------------ */
@@ -547,6 +695,10 @@ button {
         font-size: 0.5px;
         /* Reduzindo o tamanho da fonte */
     }
+}
+
+.logo__header__OD {
+    width: 70px;
 }
 
 /*------------ Acessibilidade Key Frames ------------ */

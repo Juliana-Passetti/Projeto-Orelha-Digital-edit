@@ -242,7 +242,7 @@ input {
 /*------------ Conteúdo ------------ */
 
 .profile-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 50px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -284,7 +284,6 @@ input {
     color: #666;
     margin-bottom: 10px;
 }
-
 /*------------ Acessibilidade ------------ */
 
 @media screen and (max-width: 768px) {
