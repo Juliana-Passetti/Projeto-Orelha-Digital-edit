@@ -265,10 +265,6 @@ input {
     box-sizing: border-box;
 }
 
-.cadastro-container{
-    height: 100%;
-}
-
 .entrar,
 .cadastro {
     margin: 10px;
@@ -291,13 +287,22 @@ input {
     text-align: center;
 }
 
-.entrar-body,
-.cadastro-body {
+.entrar-body {
     display: grid;
     grid-template-rows: auto;
     background-color: var(--cor-fundo);
     padding: 20px;
     height: 15rem;
+    text-align: start;
+    align-items: center;
+}
+
+.cadastro-body {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    height: 21.1em;
     text-align: start;
     align-items: center;
 }
