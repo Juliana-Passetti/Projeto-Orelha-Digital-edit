@@ -1,57 +1,482 @@
-@import url('../Home/home-header.css');
-@import url('../Home/footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.container__login__cad {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* Divide a página em duas colunas */
-    gap: 20px;
-    /* Espaçamento entre as colunas */
-    margin: 20px;
-    /* Margem externa para separar das bordas da página */
+:root {
+
+    --cor-fundo: #252525db;
+    --cor-fundo-header: #25252555;
+    --cor-fundo-sidebar: #252525;
+    --cor-branca: #D9D9D9;
+    --cor-laranja: #df5302cd;
+    --texto-principal: 'Cinzel Decorative', serif;
+    --texto-header: "Kalam", cursive;
+    --texto-secundário: "Merienda", cursive;
+    --texto-terciário: "Tahoma", sans-serif;
+    --tamanho-texto: 18px;
 }
 
-/* Estilos para a seção de login */
-.login__entrada {
-    background-color: #f0f0f0;
-    /* Cor de fundo */
-    padding: 20px;
-    /* Espaçamento interno */
-    border-radius: 10px;
-    /* Arredondamento das bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* Estilos para a seção de cadastro */
-.login__saida {
-    background-color: #f0f0f0;
-    /* Cor de fundo */
-    padding: 20px;
-    /* Espaçamento interno */
-    border-radius: 10px;
-    /* Arredondamento das bordas */
-}
-
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* Divide a página em duas colunas */
-    margin: 0;
-    /* Remove margens padrão do body */
-    padding: 0;
-    /* Remove padding padrão do body */
-    height: 100vh;
-    /* Garante que o grid ocupe toda a altura da tela */
+    font-family: var(--texto-header);
+    background-color: var(--cor-fundo);
+    color: var(--cor-branca);
+    overflow: auto;
+
 }
 
-/* Estilos para a primeira coluna */
-.column1 {
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    /* Largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor-fundo-sidebar);
+    /* Cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--cor-laranja);
+    /* Cor do botão de rolagem */
+    border-radius: 5px;
+    /* Arredondamento do botão de rolagem */
+}
+
+.logo__header__OD {
+    width: 70px;
+}
+
+#header {
+    width: 100%;
+}
+
+.header,
+.nav__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header {
+    background-color: var(--cor-fundo-header);
+    box-shadow: 1px 1px 4px var(--cor-fundo);
+    height: 3.5em;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.nav__header {
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    z-index: 2;
+}
+
+.nav__header a {
+    color: var(--cor-branca);
+    font-size: var(--tamanho-texto);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover {
+    color: var(--cor-laranja);
+    transition: 1s;
+}
+
+.ativo {
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteudo {
+    text-align: start;
+    font-family: var(--texto-secundário);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 16px;
+    transition: 1s;
+}
+
+.botao__icone__header {
+    background-color: transparent;
+    border: none;
+    color: var(--cor-branca);
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.botao__icone__header__fechar {
+    margin-left: 10px;
+}
+
+/*------------ Busca ------------ */
+search-container {
+    position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    height: 30px;
+    font-family: var(--texto-secundário);
+    font-size: var(--tamanho-texto);
+    border: var(--cor-laranja) solid 2px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.botao__busca {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.botao__login {
+    background-color: transparent;
+    color: var(--cor-laranja);
+}
+
+/*------------ Dropdown Todos ------------ */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownContentDownload {
+    min-width: 150px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-fundo-sidebar);
+    min-width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--cor-branca);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--cor-laranja);
+}
+
+.show {
+    display: block !important;
+}
+
+/*------------ Submenu ------------ */
+
+.subcategorias-literatura {
+    display: none;
+}
+
+.subcategorias-literatura {
+    display: none;
+    max-height: 400px;
+    /* Altura máxima das subcategorias */
+    overflow-y: auto;
+}
+
+.subcategorias-literatura::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    /* Largura da barra de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-track {
+    background: var(--cor-fundo-sidebar);
+    /* Cor de fundo da barra de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-thumb {
+    background: var(--cor-laranja);
+    /* Cor do botão de rolagem */
+    border-radius: 5px;
+    /* Arredondamento do botão de rolagem */
+}
+
+.subcategorias-literatura::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-laranja);
+    /* Cor do botão de rolagem quando hover */
+}
+
+.login {
+    margin-left: 50px;
+}
+
+/*------------ Dropzone ------------ */
+
+.dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.dropzone p {
+    font-size: 16px;
+    color: var(--cor-branca);
+}
+
+/* Estilos adicionais quando arrastando sobre a área */
+.dropzone.dragover {
     background-color: #f0f0f0;
-    /* Cor de fundo da primeira coluna */
 }
 
-/* Estilos para a segunda coluna */
+.dropzone.dragover p {
+    color: #333;
+}
+
+/*------------ Colunas ------------ */
+
+.container__login__cad {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: 36.6vw;
+    box-sizing: border-box;
+}
+
+.column1 {
+    display: grid;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
 .column2 {
-    background-color: #ffffff;
-    /* Cor de fundo da segunda coluna */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-area: inherit;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.texto__entrada2 {
+    height: 1vw;
+}
+
+.form2 {
+    height: 100%;
+}
+
+
+/*------------ Acessibilidade ------------ */
+
+@media screen and (max-width: 768px) {
+    .botao__icone__header {
+        display: block;
+    }
+
+    .nav__header {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        top: 0;
+        background-color: var(--cor-fundo-sidebar);
+        height: 100%;
+        width: 40vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vh;
+    }
+
+    .nav__header__link {
+        margin-left: 50px;
+    }
+
+    .botao__busca,
+    input,
+    .usuario {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--cor-fundo-sidebar);
+        min-width: 230px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+    }
+
+    .dropdown-content a {
+        color: var(--cor-branca);
+
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        padding-left: 30px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .botao__login {
+        margin-top: 50px;
+    }
+
+    .container__conteudo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        height: 10%;
+        width: 100%;
+        padding-bottom: 80px;
+
+    }
+
+    .container__conteudo__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .container__conteudo__descricao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 98%;
+
+    }
+
+    .home__imagem__livro {
+        width: 90%;
+    }
+
+    .container__footer__header__copy {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-right: 55px;
+
+    }
+}
+
+/*------------ Acessibilidade Smartphone ------------ */
+
+@media screen and (max-width: 480px) {
+    .nav__header {
+        width: 90vw;
+        /* Ajuste para tornar o menu mais estreito */
+    }
+
+    .nav__header__link {
+        margin-top: 5px;
+        /* Reduzindo a margem superior */
+        margin-bottom: 5px;
+        /* Adicionando uma margem inferior */
+        font-size: 14px;
+        /* Reduzindo o tamanho da fonte */
+    }
+
+    .botao__login {
+        margin-top: 10px;
+        /* Ajuste de margem superior */
+    }
+
+    .container__conteudo__titulo {
+        font-size: 24px;
+        /* Reduzindo o tamanho da fonte do título */
+    }
+
+    .container__conteudo__descricao {
+        font-size: 16px;
+        /* Reduzindo o tamanho da fonte da descrição */
+    }
+
+    .home__imagem__livro {
+        width: 95%;
+        /* Reduzindo ligeiramente a largura da imagem */
+    }
+
+    .container__footer {
+        padding: 5px;
+        /* Reduzindo o preenchimento */
+    }
+
+    .container__footer img {
+        width: 50px;
+        /* Reduzindo o tamanho do logotipo */
+    }
+
+    .footer__content__copy,
+    .footer__content__texto {
+        font-size: 0.5px;
+        /* Reduzindo o tamanho da fonte */
+    }
+}
+
+/*------------ Acessibilidade Key Frames ------------ */
+
+@keyframes mostrarBarra {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw;
+    }
 }
