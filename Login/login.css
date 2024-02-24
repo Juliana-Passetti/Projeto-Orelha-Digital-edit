@@ -265,6 +265,10 @@ input {
     box-sizing: border-box;
 }
 
+.cadastro-container{
+    height: 100%;
+}
+
 .entrar,
 .cadastro {
     margin: 10px;
@@ -279,7 +283,7 @@ input {
 .entrar-header,
 .cadastro-header {
     background-color: var(--cor-fundo-sidebar);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     padding: 20px;
@@ -297,6 +301,7 @@ input {
     text-align: start;
     align-items: center;
 }
+
 
 .entrar-body1 {
     box-sizing: border-box;
@@ -330,10 +335,20 @@ input[type="email"] {
 
 /* Botão ocupando 100% do box */
 button {
+    font-size: 2rem;
     width: 100%;
     padding: 10px 0;
     border-radius: 10px;
+    background-color: var(--cor-fundo-sidebar);
+    color: var(--cor-branca);
+    border: var(--cor-laranja) solid 2px;
+    cursor: pointer;
     /* Ajuste conforme necessário para centralizar o texto verticalmente */
+}
+
+button:hover {
+    background-color: var(--cor-laranja);
+    transition: 1s;
 }
 
 /* Espaçamento para "Esqueceu sua senha?" */
@@ -342,6 +357,14 @@ button {
     /* Cria uma nova linha */
     margin-top: 10px;
     /* Espaço acima do texto */
+}
+
+.esqueceu-senha__link {
+    color: var(--cor-branca);
+}
+
+.esqueceu-senha__link:hover {
+    color: var(--cor-laranja);
 }
 
 /* Espaçamento entre o campo "Email" e a descrição no box "Cadastro" */
@@ -359,6 +382,9 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 
 /*------------ Acessibilidade ------------ */
