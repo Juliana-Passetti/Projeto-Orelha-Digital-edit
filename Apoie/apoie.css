@@ -238,58 +238,8 @@ input {
 }
 
 /*------------ Conteúdo ------------ */
-.container__conteudo {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr 1fr);
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    height: 30%;
-    padding-bottom: 80px;
 
-}
 
-.conteudo__recomendacao {
-    font-size: 30px;
-}
-
-.container__conteudo__recomendacao {
-    font-size: 20px;
-}
-
-.container__conteudo__titulo {
-    margin-top: 60px;
-    font-size: 30px;
-
-}
-
-.home__imagem__livro {
-    padding: 50px 50px 0 30px;
-    margin-bottom: 10px;
-}
-
-.container__conteudo__titulo {
-    font-family: var(--texto-secundário);
-    font-weight: bold;
-    font-style: italic;
-}
-
-.container__conteudo__sinopse {
-    margin-top: 40px;
-    font-family: var(--texto-terciário);
-    font-optical-sizing: auto;
-    font-size: 20px;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.container__conteudo__descricao {
-    margin-top: 20px;
-    font-family: var(--texto-terciário);
-    text-align: justify;
-    font-weight: 300;
-    font-size: 1.5rem;
-    font-optical-sizing: auto;
-}
 
 /*------------ Carrossel ------------ */
 
@@ -336,6 +286,7 @@ input {
     flex-wrap: wrap;
     padding: 20px;
     width: 100%;
+    height: 36.6vw;
     /* Ocupa 100% da largura */
     box-sizing: border-box;
 }
@@ -345,26 +296,48 @@ input {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    height: 100%;
     overflow: hidden;
 }
 
 .plan-header {
-    background-color: #800080;
+    background-color: var(--cor-fundo-sidebar);
+    font-size: 3rem;
+    font-weight: bold;
     color: white;
     padding: 20px;
+    height: 16.66%;
     text-align: center;
 }
 
-.plan-footer {
-    background-color: #f2f2f2;
+.icone__imagem__plano {
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    background-color: var(--cor-fundo);
     padding: 20px;
+    height: 70%;
+    text-align: center;
+    align-items: center;
+}
+
+.plan-footer {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    height: 13.33%;
     text-align: center;
 }
 
 .price {
-    color: #800080;
-    font-size: 24px;
-    font-weight: bold;
+    color: var(--cor-branca);
+    font-size: 2rem;
+
 }
 
 /*------------ Acessibilidade ------------ */
