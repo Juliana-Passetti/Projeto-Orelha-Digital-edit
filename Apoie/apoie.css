@@ -28,6 +28,7 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-branca);
     overflow: auto;
+    height: 100vh;
 
 }
 
@@ -123,6 +124,11 @@ a:hover {
 
 .botao__icone__header__fechar {
     margin-left: 10px;
+}
+
+.container__footer__header footer{
+    display: flex;
+    justify-self: baseline;
 }
 
 /*------------ Busca ------------ */
