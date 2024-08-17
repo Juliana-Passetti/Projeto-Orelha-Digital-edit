@@ -257,12 +257,15 @@ input {
 
 .profile-header h1 {
     color: #333;
+    font-size: 30px;
 }
 
 .profile-info {
     display: flex;
     align-items: center;
 }
+
+
 
 .profile-picture img {
     width: 150px;
@@ -280,10 +283,16 @@ input {
     color: #333;
 }
 
-.user-details p {
+.user-details {
     color: #666;
     margin-bottom: 10px;
 }
+
+.link-assinatura {
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
+
 /*------------ Acessibilidade ------------ */
 
 @media screen and (max-width: 768px) {
